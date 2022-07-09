@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/triple_T.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--Menu de Navegación-->
+        <div>
+            <a class="header__nombre" href="./index.html">TINI STOESSEL</a>
+        </div>
+        <nav class="header__navbar">
+            <div>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../page/tour.html">TOUR</a></li>
+                    <li><a href="../page/discografia.html">DISCOGRAFIA</a></li>
+                    <li><a href="../page/galeria.html">GALERIA</a></li>
+                    <li><a href="../page/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor-form">
+        <div class="contenedor-form__datos">
+            <!-- Form -->
+            <form action="" class="form">
+                <fieldset class="form__fieldset">
+                    <legend>Datos Personales</legend>
+
+                    <label class="form__text" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre" required>
+                    <br><br>
+
+                    <label class="form__text" for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido" required>
+                    <br><br>
+
+                    <label class="form__text" for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu Email" required>
+                    <br><br>
+
+                    <legend>Comentario</legend>
+                    <textarea name="comentarios" id="comentario" cols="40" rows="10" minlength="5" maxlength="200"
+                        style="text-align: left;" placeholder="Dejanos tus comentarios"></textarea>
+                    <br> <br>
+
+                    <input type="reset" value=" Limpiar ">
+                    <input type="submit" value=" Enviar ">
+                    <br><br>
+                </fieldset>
+            </form>
+        </div>
+        <div class="form">
+            <h1 class="titulo">CONTACTO</h1>
+            <br>
+            <p>Queremos saber tu opinion, dejanos tu mensaje para seguir mejorando!</p>
+        </div>
+    </main>
+
+    <!--Pie de Pagina-->
+    <footer class="footer__flex">
+        <div class="footer__derechos">
+            <p><strong>Copyright Natalia Elias</strong></p>
+            <br>
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div>
+            <ul class="footer__menu">
+                <li><a href="https://www.facebook.com/TinitaStoesel" target="_blank"><img
+                            src="../assets/img/facebook (1).png" alt="FACEBOOK"></a></li>
+                <li><a href="https://twitter.com/TiniStoessel" target="_blank"><img src="../assets/img/twitter.png"
+                            alt="TWITTER"></a></li>
+                <li><a href="https://www.instagram.com/tinistoessel/" target="_blank"><img
+                            src="../assets/img/instagram (1).png" alt="INSTAGRAM"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJusEPcWIH9EyYSCqGP-1ew" target="_blank"><img
+                            src="../assets/img/youtube (1).png" alt="YOUTUBE"></a></li>
+                <li><a href="https://open.spotify.com/artist/7vXDAI8JwjW531ouMGbfcp" target="_blank"><img
+                            src="../assets/img/spotify.png" alt="SPOTIFY"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
