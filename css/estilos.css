@@ -43,7 +43,9 @@ body{
     color: black;
     width: 50%;
 }
-
+.header__nombre:hover{
+    color: violet;    
+}
 
 .header__navbar{
     padding: 2vh;
@@ -311,12 +313,6 @@ input[type=submit] , input[type=reset] {
     background-color: violet;
   }
 
-  /*ESCRITORIO*/
-@media only screen and (max-width: 1024px) {
-  .singles h2{
-    font-size: 25px;
-    }
-}
 
 /*TABLET*/
 @media only screen and (max-width: 768px) {
