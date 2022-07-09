@@ -4,7 +4,7 @@
 <ul>
     <li>Html5</li>
     <li>CSS3</li>
-    <li>Booststrap</li>
+    <li>Bootstrap</li>
     <li>Node.js</li>
     <li>SASS</li>
 </ul>
