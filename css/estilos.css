@@ -7,82 +7,55 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Ubuntu', sans-serif; */
     background-color: black;
-    color: pink;
-    gap: 2rem;
+    color: pink;  
 }
 
 .titulo{
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     padding-top: 2vh;
     padding-left: 2vh;
+    margin-bottom: 3vh;
 }
+
 /* HEADER*/
 
 .header{
     background-color: pink;
+}
+
+.container-fluid{
     font-weight: bold;
+    flex-wrap: wrap;
     height: auto;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;   
 }
 
-.header__nombre{
-    margin-left: 2vh;
-    margin-right: 2vh;
-    font-size: 1.3rem;
-    padding-top: 0.3125vh;
-    padding-bottom: 0.3125vh;
-    text-decoration: none;
+.navbar-nav {
+    align-items: flex-end;  
+}
+  
+.navbar-nav a {
     color: black;
-    width: 50%;
+    font-size: 2.5vh;
 }
-.header__nombre:hover{
-    color: violet;    
+.nav-link:hover, .navbar-brand:hover{
+    text-decoration:underline;
+    color: rgb(236, 38, 236);
 }
-
-.header__navbar{
-    padding: 2vh;
-    width: 50%;
-    height: auto;
-}
-.header__navbar a{
-    padding: 0.5rem;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black;
+#navbarNavAltMarkup{
+    justify-content: flex-end;
 }
 
-.header__navbar ul{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 1vh;
-    list-style-type: none;
-    text-align: right;
-    height: 30%;
-}
-
-.header__navbar a:hover{
-    padding: 0.5rem;
-    text-decoration: underline;
-    color: rgb(243, 35, 243);
-}
-
-/* MAIN INDEX */
-
+/* INDEX */
 
 .singles{
     padding: 0 2vh 2vh 2vh;
     display: grid;
-    font-size: 12px;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 15% 1fr;
     grid-template-areas: 
@@ -91,11 +64,12 @@ body{
     justify-items: flex-start;
     justify-content: space-between;
 }
-#titulo{
-    padding-left: 0;
+
+.singles h2{
+    font-size: 20px;
 }
-h1{
-    grid-area: titulo;
+.singles img{
+    margin-top: 2vh;
 }
 singles__img1{
     grid-area: img1;
@@ -116,29 +90,6 @@ singles__img4{
     padding: 20px 20px 20px 0;
 }
 
-
-/* TOUR */
-
-
-.tour{
-    display: grid;
-    grid-template-columns: repeat(3, 0.3fr);
-    grid-template-rows: repeat(14, 0.2fr);
-    margin: 2vh 2vh 2vh 2vh;
-    justify-content: space-between;
-}
-
-.tour__titulo{
-    background-color: black;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 2vh;
-}
-
-.tour ul{
-    list-style-type: none;
-}
-
 .acerca {
     display: flex;
     flex-direction: column;
@@ -146,10 +97,26 @@ singles__img4{
     margin: 2vh 2vh 2vh 2vh;
     border: solid 2px;
 }
-.acerca__info{
+
+.acerca__info {
     line-height: 2;
-    font-size: 12px;
+    font-size: 15px;
 }
+
+
+/* TOUR */
+.row{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.tour-cabecera{
+    display: flex;
+    justify-content: center;
+}
+.container-fluid-tour{
+    padding-top: 2vh;
+}
+
 
 /* FOOTER */
 
@@ -167,7 +134,7 @@ singles__img4{
 
 .footer__menu{
     list-style: none;
-    padding: 2vh;
+    padding: 2vh ;
 }
 
 .footer__menu li{
@@ -182,17 +149,15 @@ singles__img4{
 .footer__derechos{
     padding: 2vh;
     text-align: left;
-    font-size: 10px;
+    font-size: 14px;
     width: 50%;
 }
-
 
 /* GALERIA */
 
 .galeria__contenedor img{
     width: 100%;
     border: solid 2px pink;
-    
 }
 
 .galeria__contenedor{
@@ -242,10 +207,9 @@ singles__img4{
 /* DISCOGRAFIA */
 
 .discografia{
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     padding: 3vh 2vh 3vh 2vh ; 
@@ -253,6 +217,9 @@ singles__img4{
 
 /*CONTACTO*/
 
+#titulo-contacto, #texto-contacto{
+    color: white;
+}
 .form__fieldset{
     font-size: 3vh;
     padding: 3vh;
@@ -322,8 +289,8 @@ input[type=submit] , input[type=reset] {
     .discografia{
         flex-direction: column;
         width: 100%;
-       
     }
+
     .discografia iframe{
         margin-bottom: 2vh;
     }
@@ -331,12 +298,17 @@ input[type=submit] , input[type=reset] {
     .form p, .form h1{
         color:white;
     }
+    .footer__flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }   
 /*MOBILE*/
 @media only screen and (max-width:500px){
     .singles{
         grid-template-columns: 100%;
-        grid-template-rows: 4% 24% 24% 24% 24%;
+        grid-template-rows: 25% 25% 25% 25%;
         grid-template-areas: 
         "titulo"
          "img1"
@@ -344,11 +316,11 @@ input[type=submit] , input[type=reset] {
          "img3"
          "img4";
         justify-items: center;
-        justify-content: space-between;;
+        justify-content: space-between;
     }
     .footer__flex{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     .header__navbar ul{
