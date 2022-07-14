@@ -51,7 +51,7 @@ body{
     justify-content: flex-end;
 }
 
-/* INDEX */
+/* HOME */
 
 .singles{
     padding: 0 2vh 2vh 2vh;
@@ -68,6 +68,7 @@ body{
 .singles h2{
     font-size: 20px;
 }
+
 .singles img{
     margin-top: 2vh;
 }
@@ -100,7 +101,7 @@ singles__img4{
 
 .acerca__info {
     line-height: 2;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 
@@ -245,12 +246,10 @@ singles__img4{
     color: pink;
     font-size: bold;
     margin-right: 2vh;
+    width: 70%;
 }
 
-.contenedor-form__datos{
-    margin: 2vh;
-    width: 100%;
-}
+
 #nombre, #apellido, #correo, #comentario{
     font-size: 2vh;
 }
@@ -264,7 +263,7 @@ input[type=text], input[type=email], textarea {
 input[type=submit] , input[type=reset] {
     background-color: pink;
     color: black;
-    padding: 12px 20px;
+    padding: 4px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -296,6 +295,9 @@ input[type=submit] , input[type=reset] {
         justify-content: center;
         align-items: center;
     }
+    .contenedor-form__datos{
+        width: 100%;
+    }
 }   
 /*MOBILE*/
 @media only screen and (max-width:500px){
@@ -321,15 +323,7 @@ input[type=submit] , input[type=reset] {
         justify-content: space-between;
         align-items: stretch;
     }
-    .contenedor-form{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        align-items: center;
-        background-image: none;
-        color: pink;
-        font-size: bold;
-    }
+ 
     .discografia{
         width: 100%;
         display: flex;
@@ -340,4 +334,5 @@ input[type=submit] , input[type=reset] {
     .discografia iframe{
         margin: 2vh;
     }
+
 }
