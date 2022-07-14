@@ -12,7 +12,7 @@ body{
 }
 
 .titulo{
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     padding-top: 2vh;
     padding-left: 2vh;
@@ -149,7 +149,7 @@ singles__img4{
 .footer__derechos{
     padding: 2vh;
     text-align: left;
-    font-size: 13px;
+    font-size: 12px;
     width: 50%;
 }
 
@@ -217,45 +217,43 @@ singles__img4{
 
 /*CONTACTO*/
 
-#titulo-contacto, #texto-contacto{
-    color: white;
-}
 .form__fieldset{
     font-size: 3vh;
     padding: 3vh;
-    height: 100%;
     border-radius: 5px;
     background-color: transparent;
-    padding: 3vh;
-    
+    padding: 2vh;
+    border: 0.5vh solid pink;
 }
-.form__text{
+.form__text , legend{
     font-size: 2.5vh;
 }   
 
 .form {
-    margin: 2vh 2vh 2vh 0;
+    margin: 2vh 4vh 2vh 2vh ;
 }
 
 .form p{
     margin-left: 2vh;
 }
-.contenedor-form{
+.contenedor-form__datos{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(..//assets/img/backgroud.jpg);
-    color: black;
+    color: pink;
     font-size: bold;
+    margin-right: 2vh;
 }
 
 .contenedor-form__datos{
     margin: 2vh;
     width: 100%;
 }
-
+#nombre, #apellido, #correo, #comentario{
+    font-size: 2vh;
+}
 input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 2vh;
@@ -290,13 +288,8 @@ input[type=submit] , input[type=reset] {
         flex-direction: column;
         width: 100%;
     }
-
     .discografia iframe{
         margin-bottom: 2vh;
-    }
-
-    .form p, .form h1{
-        color:white;
     }
     .footer__flex{
         flex-direction: column;
@@ -347,5 +340,4 @@ input[type=submit] , input[type=reset] {
     .discografia iframe{
         margin: 2vh;
     }
-
 }
