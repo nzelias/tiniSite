@@ -211,6 +211,17 @@ singles{
 
 /*CONTACTO*/
 
+.contenedor-form__datos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-principal;
+    font-size: bold;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 50%;
+}
+
 .form {
     margin: 2vh 4vh 2vh 0 ;
     &__fieldset{
@@ -229,18 +240,7 @@ singles{
     }
 }
 
-.contenedor-form__datos{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $color-principal;
-    font-size: bold;
-    margin-left: 2vh;
-    margin-right: 2vh;
-    width: 70%;
-}
+
 #titulo_contacto{
     padding-left: 0;
 }
@@ -296,9 +296,7 @@ input[type=submit] , input[type=reset] {
         justify-content: center;
         align-items: center;
     }
-    .contenedor-form__datos{
-        width: 70%;
-    }
+
     .acerca__info{
         font-size: $font-small;
     }
@@ -342,11 +340,10 @@ input[type=submit] , input[type=reset] {
     .discografia iframe{
         margin: 2vh;
     }
+    .tour__row{
+        flex-direction: column;
+    }
     .contenedor-form__datos{
         width: 100%;
-    }
-    .tour__row{
-        
-        flex-direction: column;
     }
 }
