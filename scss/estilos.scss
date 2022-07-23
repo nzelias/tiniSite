@@ -136,7 +136,7 @@ singles{
     flex-wrap: wrap;
     &__menu{
         list-style: none;
-        padding: 2vh ;
+        padding: 2vh;
     }
     &__menu li{
         display: inline-block;
@@ -149,7 +149,6 @@ singles{
         padding: 2vh;
         text-align: left;
         font-size: 12px;
-        width: 50%;
     }
 }
 
@@ -291,14 +290,16 @@ input[type=submit] , input[type=reset] {
             margin-bottom: 2vh;
         }
     }
-    .footer{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .acerca__info{
         font-size: $font-small;
+    }
+    .footer{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 }   
 /*MOBILE*/
@@ -319,11 +320,7 @@ input[type=submit] , input[type=reset] {
         justify-items: center;
         justify-content: space-between;
     }
-    .footer{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+
     .header__navbar ul{
         flex-direction: column;
         justify-content: space-between;
@@ -346,4 +343,11 @@ input[type=submit] , input[type=reset] {
     .contenedor-form__datos{
         width: 100%;
     }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
 }
+
+
