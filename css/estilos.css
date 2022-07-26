@@ -58,7 +58,7 @@ body {
 
 .contacto .container-form__datos {
   display: flex;
-  width: 75%; }
+  width: 50%; }
   .contacto .container-form__datos .form {
     width: 100%;
     margin: 2vh 0 2vh 0; }
@@ -204,6 +204,8 @@ body {
     justify-content: space-between; }
     .home .singles img {
       padding: 20px 0 20px 0; }
+  .home .acerca__info {
+    font-size: 15px; }
   .discografia {
     display: flex;
     flex-direction: column;
@@ -211,8 +213,13 @@ body {
     width: 100%; }
     .discografia iframe {
       margin-bottom: 2vh; }
-  .acerca__info {
-    font-size: 15px; }
+  .contacto #texto {
+    padding-right: 2vh;
+    padding-left: 2vh; }
+  .contacto .container-form__datos {
+    width: 70%;
+    padding-right: 2vh;
+    padding-left: 2vh; }
   .footer {
     display: flex;
     text-align: center;
