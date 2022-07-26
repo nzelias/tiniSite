@@ -1,0 +1,32 @@
+//HEADER
+.header{
+    background-color: $color-primary;
+    width: 100%;
+    .container-fluid{
+        font-weight: bold;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-between;
+        align-items: center; 
+        .navbar{
+            &-nav {
+                align-items: flex-end; 
+                .nav-link{
+                    color: $color-secondary;
+                    font-size: $font-small;
+                    &:hover{
+                        text-decoration:underline;
+                        color: rgb(236, 38, 236);
+                    }
+                }
+            }
+            &-brand:hover{
+                text-decoration:underline;
+                color: rgb(236, 38, 236);
+            }
+        }
+        #navbarNavAltMarkup{
+            justify-content: flex-end;
+        }
+    }
+}       

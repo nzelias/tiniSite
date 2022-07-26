@@ -1,0 +1,48 @@
+.contacto{
+  #opinion{
+    margin-left: 2vh;
+  }
+  .container-form__datos{
+    display: flex;
+    width: 75%;
+    .form {
+      width: 100%;
+      margin: 2vh 0 2vh 0 ;
+      &__fieldset{
+      font-size: $font-large;
+      padding: 3vh;
+      border-radius: 5px;
+      background-color: transparent;
+      padding: 2vh;
+      border: 0.5vh solid $color-primary;
+      }
+      &__text , legend{
+          font-size: $font-small;
+      }   
+      input[type=text], input[type=email], textarea {
+          width: 100%;
+          padding: 2vh;
+          border: 1px solid $color-secondary;
+          border-radius: 4px;
+      }
+      input[type=submit] , input[type=reset] {
+          background-color: $color-primary;
+          color: $color-secondary;
+          padding: 4px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: $font-small;
+        }
+        input:hover, textarea:hover{
+          border: 2px solid $color-secondary;
+        }
+        input[type=submit]:hover, input[type=reset]:hover {
+          background-color: violet;
+        }
+        #nombre, #apellido, #correo, #comentario{
+          font-size: 2vh;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.tour{
+    &__row{
+        display: flex;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    &__container-fluid{
+        padding-top: 2vh;
+        color: $color-accent;
+    }
+}

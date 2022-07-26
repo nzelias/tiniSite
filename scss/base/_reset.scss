@@ -1,0 +1,18 @@
+*{  margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: $color-secondary;
+    color: $color-primary;
+}
+
+.titulo{
+    font-size: $font-medium;
+    text-align: left;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    margin-bottom: 3vh;
+}
