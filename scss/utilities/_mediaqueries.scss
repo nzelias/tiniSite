@@ -1,3 +1,62 @@
+//MOBILE
+@media (min-width: 320px) and (max-width:576px){
+    .titulo {
+        font-size: $font-medium;
+        text-align: center;
+    }
+    .home{
+        .singles{
+            display: grid;
+            justify-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-areas: 
+            "titulo"
+            "img1"
+            "img2"
+            "img3"
+            "img4";
+            & img{
+                padding: 20px 0 20px 0;
+            }
+        }
+    }
+
+    .discografia{
+        width: 100%;
+        @include flex (column, space-between, center, wrap);
+        & iframe{
+            margin: 0 0 2vh 0;
+        }
+    }
+    .tour{
+        &__row{
+        @include flex (column, none, center, wrap);
+        }
+    }
+    
+    .contacto{
+        #texto{
+            padding-right: 2vh;
+            padding-left: 2vh;
+        }
+        .container-form__datos{
+            width: 100%;
+            padding-right: 2vh;
+            padding-left: 2vh;
+        }
+    }
+
+    .footer{
+        @include flex (column, space-between, center, wrap);
+        &__derechos{
+            align-items: center;
+            }
+    }
+}
+
 //TABLET//
 @media (min-width: 577px) and (max-width: 991px){
     .titulo {
@@ -25,6 +84,11 @@
             font-size: $font-small;
         }
     }
+    .tour{
+        &__row{
+        @include flex (column, space-between, center, wrap);
+        }
+    }
     .discografia{
         display: flex;
         flex-direction: column;
@@ -34,7 +98,6 @@
             margin-bottom: 2vh;
         }
     }
-
     .contacto{
         #texto{
             padding-right: 2vh;
@@ -47,71 +110,7 @@
         }
     }
     .footer{
-        display: flex;
+        @include flex (row, space-between, center, nowrap);
         text-align: center;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: nowrap;
     }
 }   
-
-//MOBILE
-@media (min-width: 320px) and (max-width:576px){
-    .titulo {
-        font-size: $font-medium;
-        text-align: center;
-    }
-    .home{
-        .singles{
-            display: grid;
-            flex-direction: column;
-            grid-template-columns: 100%;
-            grid-template-rows: 25% 25% 25% 25%;
-            grid-template-areas: 
-            "titulo"
-            "img1"
-            "img2"
-            "img3"
-            "img4";
-            justify-items: center;
-            justify-content: space-between;
-            & img{
-                padding: 20px 0 20px 0;
-            }
-        }
-    }
-    .tour__row{
-        flex-direction: column;
-    }
-    .discografia{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        & iframe{
-            margin: 0 0 2vh 0;
-        }
-    }
-
-    .contacto{
-        #texto{
-            padding-right: 2vh;
-            padding-left: 2vh;
-        }
-        .container-form__datos{
-            width: 100%;
-            padding-right: 2vh;
-            padding-left: 2vh;
-        }
-    }
-
-    .footer{
-        flex-direction: column;
-        align-content: center;
-        &__derechos{
-            align-items: center;
-            }
-    }
-}

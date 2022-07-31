@@ -1,11 +1,27 @@
 .tour{
     &__row{
-        display: flex;
+        @include flex (row, space-between, center, wrap);
         margin-top: 2vh;
-        margin-bottom: 2vh;
+        margin-bottom: 5vh;
+        font-size: $font-small;
     }
     &__container-fluid{
         padding-top: 2vh;
         color: $color-accent;
+    }
+    .btn-primary{
+        --bs-btn-color:#fff;
+        --bs-btn-font-size: 12px;
+        --bs-btn-bg: #ffc0cb;
+        --bs-btn-border-color: #ffc0cb;
+        --bs-btn-hover-color: #ffc0cb;
+        --bs-btn-hover-bg: #000000;
+        --bs-btn-hover-border-color: #ffc0cb;
+        --bs-btn-focus-shadow-rgb: #000000;
+        --bs-btn-active-color: #ffc0cb;
+        --bs-btn-active-bg: #000000;
+        --bs-btn-active-border-color: #ffc0cb;
+        --bs-btn-disabled-bg: #ffc0cb;
+        --bs-btn-disabled-border-color: #ffc0cb;
     }
 }

@@ -1,54 +1,56 @@
-.home{
-    .titulo {
-        font-size: $font-large;
-        text-align: center;
-    }
-    .singles{   
-        display: grid;
-        padding: 0 2vh 2vh 2vh;
-        margin-top: 3vh;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: 15% 1fr;
-        grid-template-areas: 
-        "titulo titulo titulo titulo"
-         "img1   img2    img3   img4";
-        justify-items: flex-start;
-        justify-content: space-between;
-        & h2{
-            font-size: $font-small;
-        }
-        & img {
-            width: 100%;
-            height: auto;
-            padding: 20px 20px 20px 0;
-        }
-        singles{
-            &_img1{
-                grid-area: img1;
-            }
-            &__img2{
-                grid-area: img2;
-            }
-            &__img3{
-                grid-area: img3;
-            }
-            &__img4{
-                grid-area: img4;
-            }
-        }    
-    }
-    .acerca {
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem;
-        margin: 2vh;
-        border: solid 2px;
-        &__info {
-            line-height: 2;
-            font-size: $font-small;
-        }
-    }
-    
-    
+.titulo {
+    font-size: $font-large;
+    text-align: center;
 }
 
+.singles {
+    display: grid;
+    padding: 0 2vh 2vh 2vh;
+    margin-top: 3vh;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 15% 1fr;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "img1   img2    img3   img4";
+    justify-items: flex-start;
+    justify-content: space-between;
+
+    & h2 {
+        font-size: $font-small;
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+        padding: 20px 20px 20px 0;
+    }
+
+    singles {
+        &_img1 {
+            grid-area: img1;
+        }
+
+        &__img2 {
+            grid-area: img2;
+        }
+
+        &__img3 {
+            grid-area: img3;
+        }
+
+        &__img4 {
+            grid-area: img4;
+        }
+    }
+}
+.acerca {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 2vh;
+    border: solid 2px;
+    &__info {
+        line-height: 2;
+        font-size: $font-small;
+    }
+}
