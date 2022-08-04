@@ -9,15 +9,11 @@ body {
   color: #ffc0cb; }
 
 .titulo {
-  font-size: 20px;
-  text-align: left;
+  font-size: 25px;
+  text-align: center;
   padding-top: 2vh;
   padding-left: 2vh;
   margin-bottom: 3vh; }
-
-.titulo {
-  font-size: 25px;
-  text-align: center; }
 
 .singles {
   display: grid;
@@ -54,7 +50,8 @@ body {
     font-size: 15px; }
 
 .contacto #opinion {
-  margin-left: 2vh; }
+  margin-left: 2vh;
+  margin-bottom: 4rem; }
 
 .contacto .container-form__datos {
   width: 50%; }
@@ -242,7 +239,7 @@ body {
     justify-content: none;
     align-items: center;
     flex-wrap: wrap; }
-  .contacto #texto {
+  .contacto #opinion {
     padding-right: 2vh;
     padding-left: 2vh; }
   .contacto .container-form__datos {
