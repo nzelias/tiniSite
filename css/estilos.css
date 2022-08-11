@@ -57,7 +57,6 @@ body {
   align-items: center;
   flex-wrap: nowrap; }
   .contacto #opinion {
-    margin-left: 2vh;
     margin-bottom: 4rem;
     text-align: center; }
   .contacto .container-form__datos {
