@@ -9,8 +9,12 @@
         padding-top: 2vh;
         color: $color-accent;
     }
+    .img-fluid {
+        max-width: 80%;
+        height: auto;
+    }
     .btn-primary{
-        --bs-btn-color:#fff;
+        --bs-btn-color:black;
         --bs-btn-font-size: 12px;
         --bs-btn-bg: #ffc0cb;
         --bs-btn-border-color: #ffc0cb;

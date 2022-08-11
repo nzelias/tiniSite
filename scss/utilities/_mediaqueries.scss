@@ -1,4 +1,4 @@
-//MOBILE
+/* MOBILE */
 @media (min-width: 320px) and (max-width:576px){
     .titulo {
         font-size: $font-medium;
@@ -57,7 +57,7 @@
     }
 }
 
-//TABLET//
+/* TABLET */
 @media (min-width: 577px) and (max-width: 991px){
     .titulo {
         text-align: center;
@@ -80,9 +80,7 @@
                 padding: 20px 0 20px 0;
             }
         }
-        .acerca__info{
-            font-size: $font-small;
-        }
+
     }
     .tour{
         &__row{

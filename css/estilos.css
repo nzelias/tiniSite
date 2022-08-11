@@ -47,45 +47,52 @@ body {
   border: solid 2px; }
   .acerca__info {
     line-height: 2;
-    font-size: 15px; }
+    font-size: 15px;
+    text-align: justify; }
 
-.contacto #opinion {
-  margin-left: 2vh;
-  margin-bottom: 4rem; }
-
-.contacto .container-form__datos {
-  width: 50%; }
-  .contacto .container-form__datos .form {
-    width: 100%;
-    margin: 2vh 0 2vh 0; }
-    .contacto .container-form__datos .form__fieldset {
-      font-size: 25px;
-      padding: 3vh;
-      border-radius: 5px;
-      background-color: transparent;
-      padding: 2vh;
-      border: 0.5vh solid #ffc0cb; }
-    .contacto .container-form__datos .form__text, .contacto .container-form__datos .form legend {
-      font-size: 15px; }
-    .contacto .container-form__datos .form input[type=text], .contacto .container-form__datos .form input[type=email], .contacto .container-form__datos .form textarea {
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .contacto #opinion {
+    margin-left: 2vh;
+    margin-bottom: 4rem;
+    text-align: center; }
+  .contacto .container-form__datos {
+    width: 50%; }
+    .contacto .container-form__datos .form {
       width: 100%;
-      padding: 2vh;
-      border: 1px solid #000000;
-      border-radius: 4px; }
-    .contacto .container-form__datos .form input[type=submit], .contacto .container-form__datos .form input[type=reset] {
-      background-color: #ffc0cb;
-      color: #000000;
-      padding: 4px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 15px; }
-    .contacto .container-form__datos .form input:hover, .contacto .container-form__datos .form textarea:hover {
-      border: 2px solid #000000; }
-    .contacto .container-form__datos .form input[type=submit]:hover, .contacto .container-form__datos .form input[type=reset]:hover {
-      background-color: violet; }
-    .contacto .container-form__datos .form #nombre, .contacto .container-form__datos .form #apellido, .contacto .container-form__datos .form #correo, .contacto .container-form__datos .form #comentario {
-      font-size: 2vh; }
+      margin: 2vh 0 2vh 0; }
+      .contacto .container-form__datos .form__fieldset {
+        font-size: 25px;
+        padding: 3vh;
+        border-radius: 5px;
+        background-color: transparent;
+        padding: 2vh;
+        border: 0.5vh solid #ffc0cb; }
+      .contacto .container-form__datos .form__text, .contacto .container-form__datos .form legend {
+        font-size: 15px; }
+      .contacto .container-form__datos .form input[type=text], .contacto .container-form__datos .form input[type=email], .contacto .container-form__datos .form textarea {
+        width: 100%;
+        padding: 2vh;
+        border: 1px solid #000000;
+        border-radius: 4px; }
+      .contacto .container-form__datos .form input[type=submit], .contacto .container-form__datos .form input[type=reset] {
+        background-color: #ffc0cb;
+        color: #000000;
+        padding: 4px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px; }
+      .contacto .container-form__datos .form input:hover, .contacto .container-form__datos .form textarea:hover {
+        border: 2px solid #000000; }
+      .contacto .container-form__datos .form input[type=submit]:hover, .contacto .container-form__datos .form input[type=reset]:hover {
+        background-color: violet; }
+      .contacto .container-form__datos .form #nombre, .contacto .container-form__datos .form #apellido, .contacto .container-form__datos .form #correo, .contacto .container-form__datos .form #comentario {
+        font-size: 2vh; }
 
 #texto {
   text-align: center;
@@ -144,8 +151,12 @@ body {
   padding-top: 2vh;
   color: #ffffff; }
 
+.tour .img-fluid {
+  max-width: 80%;
+  height: auto; }
+
 .tour .btn-primary {
-  --bs-btn-color:#fff;
+  --bs-btn-color:black;
   --bs-btn-font-size: 12px;
   --bs-btn-bg: #ffc0cb;
   --bs-btn-border-color: #ffc0cb;
@@ -210,6 +221,7 @@ body {
     padding: 2vh;
     font-size: 12px; }
 
+/* MOBILE */
 @media (min-width: 320px) and (max-width: 576px) {
   .titulo {
     font-size: 20px;
@@ -255,6 +267,7 @@ body {
     .footer__derechos {
       align-items: center; } }
 
+/* TABLET */
 @media (min-width: 577px) and (max-width: 991px) {
   .titulo {
     text-align: center; }
@@ -268,8 +281,6 @@ body {
     justify-content: space-between; }
     .home .singles img {
       padding: 20px 0 20px 0; }
-  .home .acerca__info {
-    font-size: 15px; }
   .tour__row {
     display: flex;
     flex-direction: column;

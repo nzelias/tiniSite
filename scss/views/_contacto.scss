@@ -1,7 +1,9 @@
 .contacto{
+  @include flex (column, center, center, nowrap);
   #opinion{
     margin-left: 2vh;
     margin-bottom: 4rem;
+    text-align: center;
   }
   .container-form__datos{
     width: 50%;
